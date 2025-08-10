@@ -1,1 +1,49 @@
-<p>chart works!</p>
+<form class="enter-meal-details" [formGroup]="mealform" (ngSubmit)="onSubmit()">
+  <h2>Meal details</h2>
+
+  <!-- Date Picker -->
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="date" placeholder="DD/MM/YYYY">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <!-- Item Name -->
+  <mat-form-field appearance="fill">
+    <mat-label>Item name</mat-label>
+    <input matInput placeholder="Enter what you ate" formControlName="itemName">
+  </mat-form-field>
+
+  <!-- Calories -->
+  <mat-form-field appearance="fill">
+    <mat-label>Calories</mat-label>
+    <input matInput type="number" formControlName="calories">
+    <span matSuffix>g</span>
+  </mat-form-field>
+
+  <!-- Protein -->
+  <mat-form-field appearance="fill">
+    <mat-label>Protein</mat-label>
+    <input matInput type="number" formControlName="protein">
+    <span matSuffix>g</span>
+  </mat-form-field>
+
+  <!-- Carbs -->
+  <mat-form-field appearance="fill">
+    <mat-label>Carbs</mat-label>
+    <input matInput type="number" formControlName="carbs">
+    <span matSuffix>g</span>
+  </mat-form-field>
+
+  <!-- Fats -->
+  <mat-form-field appearance="fill">
+    <mat-label>Fats</mat-label>
+    <input matInput type="number" formControlName="fats">
+    <span matSuffix>g</span>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">
+    Enter Meal Details
+  </button>
+</form>

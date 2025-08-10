@@ -1,0 +1,48 @@
+/* .enter-meal-details{
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 25%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+ 
+}
+input {
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+}
+button {
+  width: 10p;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #0056b3;
+} */
+
+.enter-meal-details {
+  max-width: 400px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+mat-form-field {
+  width: 100%;
+}
